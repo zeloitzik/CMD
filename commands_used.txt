@@ -1,0 +1,19 @@
+#The following lines are the commands I used for the requested:
+#Stage 1:
+"hello desktop" > desktop.txt
+cd C:\Users\porat\Downloads
+"hello download" > download.txt
+#Stage 2
+move "C:\Users\porat\OneDrive\שולחן העבודה\desktop.txt" "C:\Users\porat\Downloads"
+move "C:\Users\porat\Downloads\download.txt" "C:\Users\porat\OneDrive\שולחן העבודה"
+#Stage 3
+cd "C:\Users\porat\OneDrive\שולחן העבודה"
+mkdir folder
+netstat > netstat.txt
+find "80" netstat.txt
+
+echo cd "C:\Users\porat\OneDrive\שולחן העבודה" > check80.bat
+echo mkdir check80 >> check80.bat
+echo cd "C:\Users\porat\OneDrive\שולחן העבודה" >> check80.bat
+echo netstat -aon ^| findstr "80" ^> netstat.txt >> check80.bat
+echo del netstat.txt >> check80.bat
